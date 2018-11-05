@@ -46,6 +46,21 @@
       <%= yield %>
       <%= render partial: 'footer' %>
 
+      <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.bushidolab.com",
+        "logo": "https://imgur.com/5JU77xq",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+1-305-764-8836",
+          "contactType": "customer service"
+        }]
+      }
+      </script>
+          
+
     </div>
   </body>
 </html>
